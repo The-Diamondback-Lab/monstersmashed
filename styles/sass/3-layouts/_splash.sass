@@ -16,6 +16,9 @@
     overflow: hidden
 
     .vid-container
+      +flex-row
+      align-items: center
+      justify-content: center
       position: absolute
       height: 100%
       width: 100%
@@ -23,6 +26,7 @@
 
       .overlay
         //+bkg-img("../../assets/img/overlay.png", center, center)
+        display: none
         position: absolute
         z-index: 1
         width: 100%
