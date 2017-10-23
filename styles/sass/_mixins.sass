@@ -1,3 +1,6 @@
+=font-crime
+  font-family: 'True Crime', 'Open Sans', sans-serif
+
 =flex-row
   display: flex
   flex-direction: row
@@ -6,22 +9,40 @@
   display: flex
   flex-direction: column
 
-=bkg-img($url, $position1, $position2)
+=bkg-img($url, $pos, $size)
   background:
     image: url("#{$url}")
-    size: cover
+    size: $size
     repeat: no-repeat
-    position: $position1 $position2
+    position: $pos
+  @content
 
-=bkg2($position1, $position2)
-  background:
-    size: cover
-    repeat: no-repeat
-    position: $position1 $position2
-  
+=bkg-side($id)
+  align-items: center
+  @if $id == left-bkg
+    justify-content: flex-end
+  @else if $id == right-bkg
+    justify-content: flex-start
+  else
+    justify-content: center
+
+=bkg($drink, $xVal, $color, $id, $align)
+  $drink: $drink
+  +bkg-img("../../assets/img/#{$drink}.png", $xVal 0px, cover)
+  background-color: $color
+  .wrapper
+    +bkg-side($id)
+  @media all and (max-width: 600px)
+    +bkg-img("../../assets/img/#{$drink}-bkg.png", $align, cover)
+
 =transition($type, $time, $timing)
   -webkit-transition: $type $time $timing
   -moz-transition: $type $time $timing
   -ms-transition: $type $time $timing
   -o-transition: $type $time $timing
   transition: $type $time $timing
+
+=text-gradient($dir, $from, $to)
+  background: -webkit-linear-gradient($dir, $from, $to)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent

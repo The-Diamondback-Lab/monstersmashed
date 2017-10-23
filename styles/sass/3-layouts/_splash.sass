@@ -1,7 +1,7 @@
 /* SPLASH.SASS - SPLASH SECTION STYLES */
 
 #splash
-  +bkg-img("../../assets/img/img-splash.png", center, center)
+  //+bkg-img("../../assets/img/img-splash.png", center, center)
   height: 100vh
   width: 100vw
 
@@ -22,11 +22,12 @@
       overflow: hidden
 
       .overlay
+        //+bkg-img("../../assets/img/overlay.png", center, center)
         position: absolute
         z-index: 1
         width: 100%
         height: 100%
-        background-color: rgba($black, .7)
+        background-color: rgba(red, .25)
 
       video
         position: absolute
@@ -35,32 +36,36 @@
         min-width: 100%
 
     .text
+      +flex-col
+      flex-direction: column-reverse
+      align-items: center
+      justify-content: center
       z-index: 2
+      width: 100%
+      height: 100%
+
+      h1, p
+        color: shade($white, 10%)
 
       h1
         +transition(all, .2s, ease-in-out)
-        +flex-col
-        align-items: center
-        justify-content: space-between
-        margin: 3em 0 0 0
         text-transform: uppercase
         text-align: center
-        font-size: 3.9em
-        color: $white
+        font-size: 10em
+        line-height: .95
+        margin: 0
+        letter-spacing: .05em
 
+        @media all and (max-width: 830px)
+          font-size: 7em
 
-      .scroll-animation
-        +flex-row
-        align-items: center
-        justify-content: center
-        margin: 10em 0 0 0
+        @media all and (max-width: 600px)
+          font-size: 5.6em
 
-        span, i
-          margin: 0 .125em
-          color: rgba(255, 255, 255, 0.3)
+        @media all and (max-width: 400px)
+          font-size: 4em
 
-        span
-          text-transform: uppercase
-
-        i
-          font-size: 3em
+      p
+        margin: 0 0 .5em 0
+        font-size: 1.5em
+        text-transform: capitalize

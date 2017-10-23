@@ -1,32 +1,33 @@
 /* FOOTER STYLES - FOOTER.SASS */
 footer
-  background-color: $darkgray
-  
+  background-color: #1c1c1c
+
   .wrapper
     +flex-row
-    align-items: flex-end
+    align-items: center
     justify-content: space-between
+    width: 100%
     padding: 1.5em 0
-    
-    @media all and (max-width: 665px)
+    @media all and (max-width: 530px)
       +flex-col
-      align-items: center
-      justify-content: center
-    
-    p
+
+
+    .dbk
       color: $white
       font-size: 1.1em
       margin: 0
-      
       @media all and (max-width: 665px)
         margin-bottom: .5em
-      
+
       a
         color: $accent
         margin-left: .25em
-          
+
     #addthis
+      width: auto
       div
+        p
+          margin: 0
         div
           a
-            margin-bottom: 0
+            margin: 0
