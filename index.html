@@ -1,0 +1,509 @@
+<!doctype html>
+<html>
+
+<head>
+  <!--meta tags-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--imports-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/c6d3fe14c1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i"
+    rel="stylesheet">
+
+  <!--style-->
+  <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/css/spinner.css">
+
+  <!-- scripts -->
+  <script src="js/drinks.js"></script>
+  <script src="js/modal.js"></script>
+
+  <title>Monster Smashed</title>
+</head>
+
+<body>
+
+  <!--splash section-->
+  <section id="splash">
+    <div class="wrapper">
+      <div class="vid-container">
+        <div class="overlay"></div>
+        <video autoplay loop muted id="vid-main">
+          <source src="assets/video/vid-splash-ae.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop muted id="vid-mobile">
+          <source src="assets/video/banner.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="text">
+        <h1 class="animated pulse zoomIn">monster<br/>smashed</h1>
+        <p>a dbk review</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section id="gallery">
+    <div class="wrapper">
+      <a href="#deweyFizz">
+        <div id="img-deweyFizz" class="gallery-block">
+          <h2 class="animated pulse infinite">&quot;The Dewey Fizz&quot;</h2>
+        </div>
+      </a>
+      <a href="#gravesite">
+        <div id="img-gravesite" class="gallery-block">
+          <h2 class="animated pulse infinite">&quot;Gravesite Grotesquery&quot;</h2>
+        </div>
+      </a>
+      <a href="#ectoplasm">
+        <div id="img-ectoplasm" class="gallery-block">
+          <h2 class="animated pulse infinite">&quot;Ectoplasm&quot;</h2>
+        </div>
+      </a>
+      <a href="#piranha">
+        <div id="img-piranha" class="gallery-block">
+          <h2 class="animated pulse infinite">&quot;Piranha Head Punch&quot;</h2>
+        </div>
+      </a>
+      <a href="#broomstick">
+        <div id="img-broomstick" class="gallery-block">
+          <h2 class="animated pulse infinite">&quot;Broomstick Punch&quot;</h2>
+        </div>
+      </a>
+      <a href="#kidcob">
+        <div id="img-kidcob" class="gallery-block">
+          <h2 class="animated pulse infinite">&quot;Kid Cob&quot;</h2>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- modal -->
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="modal" id="modal">
+    <div class="modal-guts">
+      <img id="img-modal" src="">
+      <p href="" id="link-drink"></p>
+    </div>
+  </div>
+
+  <!--the dewey fizz-->
+  <section id="deweyFizz" class="drink-block">
+    <div class="wrapper" id="left-bkg">
+      <div class="text">
+        <div class="drink-header">
+          <span class="booze"><i>BOO</i>-ze 1</span>
+          <h1>&quot;the dewey fizz&quot;</h1>
+        </div>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1">Review</li>
+          <li class="tab-link" data-tab="tab-3">Recipe</li>
+          <li class="tab-link see" data-tab="tab-2">See Me</li>
+        </ul>
+        <div id="tab-1" class="tab-content current">
+          <p>
+            Beware: This concoction of raw egg and heavy cream will have you foaming at the mouth.
+            Based on <i>Scream</i>.
+          </p>
+          <p class="review">
+            &quot;None of the ingredients in this drink belong together&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Allison O&rsquo;Reilly</span>
+          </p>
+          <br>
+          <p class="review">
+            &quot;I was told it contained dairy and a raw egg. I don&rsquo;t know what I expected&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Zach Phillips,
+              <span class="title">diversions staff writer</span>
+            </span>
+          </p>
+        </div>
+        <div id="tab-3" class="tab-content flex">
+          <div class="ingred-wrapper">
+            <p class="ingredients">
+              What we used:
+              <span>
+                2 oz. coconut water, 1 oz. heavy cream, 2 oz. club soda, Black gel frosting, Egg white, Squeeze of lime juice, 1 oz. vanilla syrup (1 cup water, 1 cup sugar, splash of vanilla extract)
+              </span>
+            </p>
+            <video autoplay loop>
+              <source src="assets/video/DewyFiz_InProject.mp4">
+            </video>
+          </div>
+          <p class="steps">What we did:
+            <span class="instruc">
+              Find your inner &ldquo;BOO-casso&rdquo; and create ghostly eyes and a mouth on the inside of your glass in gel. As it drips spookily, mix water of coconut, juice of pineapple, heavy cream of cow, essence of lime and white of unborn chicken, along with vanilla simple syrup prepared the same way as in Broomstick Punch. Top off with soda of club.
+            </span>
+          </p>
+        </div>
+        <div id="tab-2" class="tab-content">
+          <img src="assets/img/monsterSmashed01.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gravesite -->
+  <section id="gravesite" class="drink-block">
+    <div class="wrapper" id="left-bkg">
+
+      <div class="text">
+        <div class="drink-header">
+          <span class="booze"><i>BOO</i>-ze 2</span>
+          <h1>"gravesite grotesquery"</h1>
+        </div>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-13">Review</li>
+          <li class="tab-link" data-tab="tab-15">Recipe</li>
+          <li class="tab-link see" data-tab="tab-14">See Me</li>
+        </ul>
+        <div id="tab-13" class="tab-content current">
+          <p>
+            This mass of vodka-drenched gummy worms will keep you living long into the night.
+            Based on <i>Night of the Living Dead</i>.
+          </p>
+          <p class="review">
+            &quot;Yo, I’m slumped off these edibles.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Cameron Neimand,
+              <span class="title"> diversions senior staff writer</span>
+            </span>
+          </p>
+          <br>
+          <p class="review">
+            &quot;Gotta love the combination of both ooze and booze.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Casey Kammerle,
+              <span class="title">online managing editor</span>
+            </span>
+          </p>
+        </div>
+        <div id="tab-15" class="tab-content flex">
+          <div class="ingred-wrapper">
+            <p class="ingredients">
+              What we used:
+              <span>
+                2 bags of gummy worms, 8 oz. of vodka, 6 oz. Jagermeister, 1/2 cup raw (turbinado) sugar, 3 oz. unflavored gelatin, 4 oz. lemon juice
+              </span>
+            </p>
+            <figure>
+              <img src="assets/img/party4.jpg" alt="Multimedia Editor Jay Reed captures the devouring of &quot;Gravesite Grotesquery.&quot;">
+              <figcaption>
+                Multimedia Editor Jay Reed captures the devouring of "Gravesite Grotesquery."
+              </figcaption>
+            </figure>
+          </div>
+          <p class="steps">What we did:
+            <span class="instruc">
+              Soak gummy worms in vodka overnight. Simmer lemon juice, water and sugar over low heat. As the sugar disappears, add gelatin, stirring constantly until it vanishes. Snuff out the heat and mix in the Jager. Banish your concoction to the frozen reaches of the fridge for 20 minutes. Spread the vodka gummy worms on a baking sheet. Pour the liquid mixture over top and return it to the icebox for several hours. Sprinkle more sugar on top just before serving.
+            </span>
+          </p>
+        </div>
+        <div id="tab-14" class="tab-content">
+          <img src="assets/img/monsterSmashed05.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ectoplasm-->
+  <section id="ectoplasm" class="drink-block">
+    <div class="wrapper" id="left-bkg">
+
+      <div class="text">
+        <div class="drink-header">
+          <span class="booze"><i>BOO</i>-ze 3</span>
+          <h1>"ectoplasm"</h1>
+        </div>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-7">Review</li>
+          <li class="tab-link" data-tab="tab-9">Recipe</li>
+          <li class="tab-link see" data-tab="tab-8">See Me</li>
+        </ul>
+        <div id="tab-7" class="tab-content current">
+          <p>
+            Nothing gets you glowing like alcohol, sugar...and lots of caffeine. Based on <i>Ghostbusters</i>.
+          </p>
+          <p class="review">
+            &quot;Fuck, this the one I blacked out on.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Cameron Neimand,
+              <span class="title">diversions senior staff writer</span>
+            </span>
+          </p>
+          <br>
+          <p class="review">
+            &quot;Burnt my finger on the marshmallow so I&rsquo;m not about it.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Casey Kammerle,
+              <span class="title">online managing editor</span>
+            </span>
+          </p>
+        </div>
+        <div id="tab-9" class="tab-content flex">
+          <div class="ingred-wrapper">
+            <p class="ingredients">
+              What we used:
+              <span>
+                1/2 oz. whipped cream-flavored vodka, 1/2 oz. melon schnapps, 1/2 oz. Mountain Dew, Marshmallow
+              </span>
+            </p>
+            <video autoplay loop>
+              <source src="assets/video/Ectoplasm_InProject.mp4">
+            </video>
+          </div>
+          <p class="steps">What we did:
+            <span class="instruc">
+              Combine liquids in your most bone-chilling chalice. Engulf the marshmallows in hellfire then douse them in vodka and drop them on top.
+            </span>
+          </p>
+        </div>
+        <div id="tab-8" class="tab-content">
+          <img src="assets/img/monsterSmashed03.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--piranha-->
+  <section id="piranha" class="drink-block">
+    <div class="wrapper" id="right-bkg">
+
+      <div class="text">
+        <div class="drink-header">
+          <span class="booze"><i>BOO</i>-ze 4</span>
+          <h1>"piranha head punch"</h1>
+        </div>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-10">Review</li>
+          <li class="tab-link" data-tab="tab-12">Recipe</li>
+          <li class="tab-link see" data-tab="tab-11">See Me</li>
+        </ul>
+        <div id="tab-10" class="tab-content current">
+          <p>
+            The bite of this liquor-filled punch hurts. A lot. Based on <i>Piranha</i>.
+          </p>
+          <p class="review">
+            &quot;It’s just Brandy, and not the popular 90s singer who went to prom with Kobe.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Cameron Neimand,
+              <span class="title">diversions senior staff writer</span>
+            </span>
+          </p>
+          <br>
+          <p class="review">
+            &quot;I had to take a seat after this one.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Hallie Miller,
+              <span class="title">special projects editor</span>
+            </span>
+          </p>
+        </div>
+        <div id="tab-12" class="tab-content flex">
+          <div class="ingred-wrapper">
+            <p class="ingredients">
+              What we used:
+              <span>
+                30 oz. whiskey, 6 oz. brandy, 7 oz. lemon juice, 1 cup sugar, 1 can pear halves, Lemon slices, Whole cloves
+              </span>
+            </p>
+            <video autoplay loop>
+              <source src="assets/video/PiranhaHeadPunch_Social.mp4">
+            </video>
+          </div>
+          <p class="steps">What we did:
+            <span class="instruc">
+              Mix the various poisons in your favorite cauldron — though, fair warning, you might want to cut back on the brandy. Fashion the pear halves into ghoulish fish corpses bubbling up from the deep, and poke in clove eyes for desired effect. Drop them into the fish bowl, along with the lemon slices, and you’re set.
+            </span>
+          </p>
+        </div>
+        <div id="tab-11" class="tab-content">
+          <img src="assets/img/monsterSmashed04.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- broomstick -->
+  <section id="broomstick" class="drink-block">
+    <div class="wrapper" id="right-bkg">
+
+      <div class="text">
+        <div class="drink-header">
+          <span class="booze"><i>BOO</i>-ze 5</span>
+          <h1>"broomstick punch"</h1>
+        </div>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-4">Review</li>
+          <li class="tab-link" data-tab="tab-6">Recipe</li>
+          <li class="tab-link see" data-tab="tab-5">See Me</li>
+        </ul>
+        <div id="tab-4" class="tab-content current">
+          <p>
+            This non-alcoholic mixture gets even witchier with some champagne. Based on <i>The Blair Witch Project</i>.
+          </p>
+          <p class="review">
+            &quot;This bad boy tastes a like fall-themed Axe body spray.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Cameron Neimand,
+              <span class="title">diversions senior staff writer</span>
+            </span>
+          </p>
+          <br>
+          <p class="review">
+            &quot;I think Starbucks could make something good out of this, but right now it needs
+            work.&quot;
+            <br>
+            <span class="person">&nbsp; &nbsp; -  Allison O&rsquo;Reilly,
+              <span class="title">diversions staff writer</span>
+            </span>
+          </p>
+        </div>
+        <div id="tab-6" class="tab-content flex">
+          <div class="ingred-wrapper">
+            <p class="ingredients">
+              What we used:
+              <span>
+                3 bottles sparkling grape juice, 1 bottle grape juice, 15 oz. lemon juice, 1 cup sugar, 6 cinnamon sticks, 10 oz. spiced syrup (1 cup sugar, 1 cup water, 1 teaspoon cinnamon, 3 whole cloves)
+              </span>
+            </p>
+            <video autoplay loop>
+              <source src="assets/video/BroomstickPunch_InProject.mp4">
+            </video>
+          </div>
+          <p class="steps">What we did:
+            <span class="instruc">
+              Dissolve the sugar into water over a crackling fire (or a saucepan over low heat). Add the spices and strain the saccharine potion before mixing it with the various juices in a cauldron. Fashion crosses from cinnamon sticks and string (or rubber bands) to keep the demons away.
+            </span>
+          </p>
+        </div>
+        <div id="tab-5" class="tab-content">
+          <img src="assets/img/monsterSmashed02.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- kidcob -->
+  <section id="kidcob" class="drink-block">
+    <div class="wrapper" id="right-bkg">
+
+      <div class="text">
+        <div class="drink-header">
+          <span class="booze"><i>BOO</i>-ze 6</span>
+          <h1>"kid cob"</h1>
+        </div>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-16">Review</li>
+          <li class="tab-link" data-tab="tab-18">Recipe</li>
+          <li class="tab-link see" data-tab="tab-17">See Me</li>
+        </ul>
+        <div id="tab-16" class="tab-content current">
+          <p>
+            Drink your veggies with this frightful mix of corn water and whiskey. Based on <i>Children of the Corn</i>.
+          </p>
+          <p class="review">
+            &quot;Stay as far away from this one as you can.&quot;<br>
+            <span class="person">&nbsp; &nbsp; - Tom Hausman,
+              <span class="title">news photo editor</span>
+            </span>
+          </p>
+          <br>
+          <p class="review">
+            &quot;Tastes freshly shucked.&quot;
+            <br>
+            <span class="person">&nbsp; &nbsp; -  Anna Muckerman,
+              <span class="title">diversions editor</span>
+            </span>
+          </p>
+        </div>
+        <div id="tab-18" class="tab-content flex">
+          <div class="ingred-wrapper">
+            <p class="ingredients">
+              What we used:
+              <span>
+                1/2 oz. white whiskey, 1/2 oz. corn water, Splash of lemon juice, Maraschino cherry, Sugar to taste
+              </span>
+            </p>
+            <figure>
+              <img src="assets/img/party3.jpg" alt="Photo Editor Tom Hausman expertly mixes &quot;KidCob.&quot;">
+              <figcaption>
+                Photo Editor Tom Hausman expertly mixes "Kid Cob."
+              </figcaption>
+            </figure>
+          </div>
+          <p class="steps">What we did:
+            <span class="instruc">
+              Strain a can of corn and collect the water. Then, co-mingle it with a few dastardly kernels and the whiskey and lemon juice. Add the cherry and sugar to taste.
+            </span>
+          </p>
+        </div>
+        <div id="tab-17" class="tab-content">
+          <img src="assets/img/monsterSmashed06.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about proj -->
+  <section id="aboutProj">
+    <div class="wrapper">
+
+      <div class="top">
+        <div class="text">
+          <div class="editor">
+            <p>About the Project</p>
+            <p class="abt">
+              Based on the book <i>Let&rsquo;s Get Monster Smashed</i> by Jon and
+              Marc Chaiet, this Diamondback special project is all about having fun.
+              We took six recipes and tried them out at a Halloween party in early
+              October. As our staff members sipped and slurped through wild combinations,
+              we asked them to write reviews that captured their gut reactions. This
+              project includes recipes and tips for you to try at home. We hope you
+              enjoy dressing your apartment in spider webs and skeletons having as
+              much fun as we did at a Halloween party to remember (or not).
+            </p>
+          </div>
+          <p>Credits</p>
+          <p class="credits">
+            Concept by Anna Muckerman, Photos by Tom Hausman, Party photos by Elliot Scarangello
+            and Evan Kramer, Video by Jay Reed, Web design by Lexus Drumgold, Akshay
+            Guthal, Design concept by Evan Berkowitz, Edited by Hallie Miller, Reviews
+            by Diamondback staff
+          </p>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/img/party2.jpg" alt="From left to right, Staff Writer Lillian Andemicael, Opinion Editor Max Foley-Keene, and staff writers Zach Phillips, Cameron Neimand and Allison O’Reilly try
+        the non-alcoholic \" ;Dewey Fizz. \ "">
+        <figcaption>
+          From left to right, Staff Writer Lillian Andemicael, Opinion Editor Max Foley-Keene,
+          and staff writers Zach Phillips, Cameron Neimand and Allison O&rsquo;Reilly
+          try the non-alcoholic &quot;Dewey Fizz.&quot;
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <p class="dbk">&copy; 2017
+        <a target="_blank" href="http://www.dbknews.com/">The Diamondback</a>
+      </p>
+
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div id="addthis" class="addthis_inline_follow_toolbox"></div>
+    </div>
+  </footer>
+
+  <!-- browser sync-->
+  <script id="__bs_script__">
+    //<![CDATA[
+    document.write(
+      "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>"
+      .replace("HOST", location.hostname));
+    //]]>
+  </script>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-599e1f8aa9cc5b6e"></script>
+</body>
+
+</html>

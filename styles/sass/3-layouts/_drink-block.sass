@@ -1,0 +1,177 @@
+/* DRINK BLOCK STYLES - DRINK-BLOCK.SASS */
+#deweyFizz
+  +bkg("deweyFizz", -150px, #1d122e, left-bkg, right)
+#broomstick
+  +bkg("broomstick", 125px, #2d1313, right-bkg, left)
+#ectoplasm
+  +bkg("ectoplasm", -150px, #172406, left-bkg, right)
+#piranha
+  +bkg("piranha", 0px, #252005, right-bkg, left)
+#gravesite
+  +bkg("gravesite", -150px, #171c0d, left-bkg, right)
+#kidcob
+  +bkg("kidcob", 0px, #021611, right-bkg, left)
+
+.drink-block
+  +transition(all, .2s, ease-in-out)
+  .wrapper
+    +flex-row
+    .overlay
+      +transition(all, .2s, ease-in-out)
+      opacity: 0
+      position: absolute
+      z-index: 1
+      width: 100%
+      height: 100%
+      background-color: rgba($black, .75)
+
+    .text
+      +transition(all, .2s, ease-in-out)
+      +flex-col
+      align-items: flex-start
+      justify-content: center
+      z-index: 2
+      width: 50%
+      color: $white
+      @media all and (max-width: 765px)
+        width: 72.5%
+      @media all and (max-width: 600px)
+        width: 100%
+
+      .drink-header
+        +flex-col
+        align-items: center
+        justify-content: center
+        width: 100%
+        .booze
+          font-family: $font-second
+        h1
+          +transition(all, .2s, ease-in-out)
+          font-size: 3em
+          text-transform: uppercase
+          margin: 0 0 .5em 0
+          text-align: center
+          @media all and (max-width: 1125px)
+            font-size: 3.25em
+          @media all and (max-width: 765px)
+            font-size: 2.75em
+          @media all and (max-width: 550px)
+            font-size: 2.5em
+          @media all and (max-width: 550px)
+            font-size: 1.85em
+
+      .tabs
+        margin: 0
+        padding: 0
+        list-style: none
+        .see
+          display: none
+          @media all and (max-width: 600px)
+            display: inline-block
+
+        li
+          +transition(all, .2s, ease-in-out)
+          color: $white
+          display: inline-block
+          border-top-left-radius: .375em
+          border-top-right-radius: .375em
+          cursor: pointer
+          padding: 1.05em 1em
+          z-index: 2
+          font-weight: 300
+          @media all and (max-width: 450px)
+            //font-size: .85em
+
+        li.current
+          background: rgba($white, .1)
+          color: $white
+          font-weight: 400
+
+      .tab-content
+        +transition(all, .2s, ease-in-out)
+        display: none
+        border-bottom-right-radius: .375em
+        border-bottom-left-radius: .375em
+        background: rgba($white, .1)
+        padding: 1.5em 2em
+        z-index: 0
+        margin-top: -.375px
+        font-size: 1.1em
+        @media all and (max-width: 450px)
+          padding: 1em
+
+        p
+          @media all and (max-width: 450px)
+            //font-size: 1em
+        .review
+          margin: 0
+          font-weight: 300
+          .person
+            font-weight: 400
+            .title
+              font-style: italic
+
+        .ingred-wrapper
+          +transition(all, .2s, ease-in-out)
+          +flex-row
+          align-items: center
+          justify-content: center
+          @media all and (max-width: 600px)
+            +flex-col
+          .ingredients
+            width: 50%
+            margin: 0 .5em 0 0
+            @media all and (max-width: 600px)
+              width: 100%
+              margin: 0
+            span
+              font-weight: 300
+
+          video
+            +transition(all, .2s, ease-in-out)
+            z-index: 0
+            width: 60%
+            @media all and (max-width: 600px)
+              margin: .75em 0
+              width: 100%
+            @media all and (max-width: 450px)
+              display: none
+
+          figure
+            +flex-col
+            align-items: center
+            justify-content: center
+            margin: 0
+            width: 100%
+            @media all and (max-width: 450px)
+              display: none
+            img
+              width: 100%
+            figcaption
+              font-family: $font-second
+              text-align: center
+              font-weight: 300
+              margin: .5em 0 0 0
+              padding: 0 .1em
+
+
+        img
+          width: 100%
+
+        .steps
+          margin-bottom: 0
+          .instruc
+            font-weight: 300
+            margin: 0
+
+      .tab-content.current
+        +transition(all, .2s, ease-in-out)
+        display: block
+        color: $white
+
+      .view
+        display: none
+        align-self: center
+        margin: 1.25em 0 0 0
+        @media all and (max-width: 600px)
+          display: flex

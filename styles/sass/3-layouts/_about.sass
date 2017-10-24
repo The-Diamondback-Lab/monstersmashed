@@ -1,0 +1,71 @@
+/* ABOUT SECTION STYLES - ABOUT.SASS */
+#aboutProj
+  //+bkg-img("../../assets/img/party2.jpg", center, cover)
+  background: $black
+
+  .wrapper
+    +flex-row
+    align-items: center
+    justify-content: center
+    @media all and (max-width: 645px)
+      +flex-col
+
+    .top
+      width: 50%
+      @media all and (max-width: 645px)
+        width: 100%
+
+      .text
+        +flex-col
+        align-self: center
+        justify-content: center
+        color: $white
+        .editor
+          +flex-col
+          align-items: flex-start
+          padding: 0 .5em 0 0
+          @media all and (max-width: 645px)
+            padding: 0
+
+          p
+            margin: 0 0 .25em 0
+          .abt
+            margin: 0 0 1.25em 0
+            font-weight: 300
+
+        p
+          color: $white
+          margin: 0 0 .25em 0
+      .credits
+        font-weight: 300
+        margin: 4em 0 0 0
+        text-align: left
+        @media all and (max-width: 645px)
+          margin: 2em 0
+        @media all and (max-width: 450px)
+          margin-bottom: 0
+
+        span
+          font-weight: 300
+
+    figure
+      +flex-col
+      align-items: center
+      justify-content: center
+      margin: 0
+      padding: 0
+      width: 50%
+      @media all and (max-width: 645px)
+        width: 100%
+      @media all and (max-width: 450px)
+        display: none
+
+      img
+        width: 85%
+      figcaption
+        width: 85%
+        text-align: center
+        font-family: $font-second
+        color: $white
+        margin: 1em 0 0 0
+        font-weight: 300
