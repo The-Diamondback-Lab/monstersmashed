@@ -11,12 +11,8 @@
 ::-webkit-scrollbar {
   display: none; }
 
-html, body {
-  overflow-x: hidden; }
-
 html {
-  overflow-y: overlay;
-  height: 100%; }
+  overflow: scroll; }
 
 body {
   color: #000; }
@@ -73,6 +69,17 @@ footer {
       footer .wrapper {
         display: flex;
         flex-direction: column; } }
+    footer .wrapper img {
+      width: 13%;
+      max-width: 13%; }
+      @media all and (max-width: 1085px) {
+        footer .wrapper img {
+          width: 15%;
+          max-width: 15%; } }
+      @media all and (max-width: 920px) {
+        footer .wrapper img {
+          width: 15%;
+          max-width: 15%; } }
     footer .wrapper .dbk {
       color: #fff;
       font-size: 1.1em;
@@ -80,6 +87,8 @@ footer {
       @media all and (max-width: 665px) {
         footer .wrapper .dbk {
           margin-bottom: 0.5em; } }
+      footer .wrapper .dbk img {
+        width: 15%; }
       footer .wrapper .dbk a {
         color: #de6f16;
         margin-left: 0.25em; }
@@ -130,7 +139,24 @@ footer {
 
 /* SPLASH.SASS - SPLASH SECTION STYLES */
 #splash {
-  padding: 0; }
+  padding: 0;
+  background-color: #000; }
+  @media all and (max-width: 1135px) {
+    #splash {
+      background-image: url("../../assets/img/img-mobile-splash.png");
+      background-size: center;
+      background-repeat: no-repeat;
+      background-position: center; } }
+  #splash .overlay {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25); }
+    @media all and (max-width: 1135px) {
+      #splash .overlay {
+        display: block; } }
   #splash .wrapper {
     display: flex;
     flex-direction: column;
@@ -143,34 +169,27 @@ footer {
     overflow: hidden; }
     #splash .wrapper .vid-container {
       display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: center;
-      position: absolute;
       height: 100%;
       width: 100%;
-      overflow: hidden; }
-      #splash .wrapper .vid-container .overlay {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 0, 0, 0.25); }
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+      @media all and (max-width: 1135px) {
+        #splash .wrapper .vid-container {
+          display: none; } }
       #splash .wrapper .vid-container video {
         position: absolute;
         z-index: 0;
         min-height: 100%;
         min-width: 100%;
-        object-fit: cover; }
-      @media all and (max-width: 1137px) {
-        #splash .wrapper .vid-container #vid-main {
-          display: none; } }
-      #splash .wrapper .vid-container #vid-mobile {
-        display: none; }
-        @media all and (max-width: 1137px) {
-          #splash .wrapper .vid-container #vid-mobile {
-            display: inline-block; } }
+        width: 100%;
+        left: 0;
+        background-size: cover; }
     #splash .wrapper .text {
       display: flex;
       flex-direction: column;
@@ -180,7 +199,7 @@ footer {
       z-index: 2;
       width: 100%;
       height: 100%; }
-      @media all and (max-width: 1137px) {
+      @media all and (max-width: 1135px) {
         #splash .wrapper .text {
           display: flex; } }
       #splash .wrapper .text h1, #splash .wrapper .text p {
