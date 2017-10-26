@@ -1,0 +1,39 @@
+/* FOOTER STYLES - FOOTER.SASS */
+footer
+  background-color: #1c1c1c
+
+  .wrapper
+    +transition(all, .25s, ease-in-out)
+    +flex-col
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 1.5em 0
+    @media all and (max-width: 690px)
+      flex-direction: column-reverse
+
+    a
+      +flex-row
+      align-items: center
+      justify-content: center
+      width: 100%
+      color: $accent
+
+      img
+        width: 20%
+        min-width: 20%
+        @media all and (max-width: 1085px)
+          width: 25%
+          max-width: 25%
+
+    #addthis
+      margin: 1em 0 0 0
+      @media all and (max-width: 690px)
+        margin: 0 0 1em 0
+      div
+        p
+          margin: 0
+        div
+          a
+            margin: 0
+            padding: 0
