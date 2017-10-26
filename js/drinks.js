@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  $('a[href*="#"]').on('click', function (e) {
+	e.preventDefault();
+
+	$('html, body').animate({
+		scrollTop: $($(this).attr('href')).offset().top
+	}, 500, 'linear');
+  });
 
   $('#deweyFizz .wrapper .text ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
