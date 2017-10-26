@@ -25,12 +25,21 @@
 
   <title>Monster Smashed</title>
 
-  <link rel="shortcut icon" href="http://www.dbknews.com/pb/resources/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://www.dbknews.com/pb/resources/favicon.ico"
+    type="image/x-icon">
 </head>
 
 <body>
 
-  <div class="spinner-wrapper"><div class="spinner-container"><center> <img src="https://s3.amazonaws.com/wapopartners.com/dbknews-wp/wp-content/uploads/2016/12/11225146/SpecialProject.jpg" width="100px" height="auto"><br /><div class="preload"> <span></span> <span></span> <span></span></div></center></div></div>
+  <div class="spinner-wrapper">
+    <div class="spinner-container">
+      <center> <img src="https://s3.amazonaws.com/wapopartners.com/dbknews-wp/wp-content/uploads/2016/12/11225146/SpecialProject.jpg"
+          width="100px" height="auto"><br />
+        <div class="preload"> <span></span> <span></span> <span></span></div>
+      </center>
+    </div>
+  </div>
+
   <!--splash section-->
   <section id="splash">
     <div class="overlay"></div>
@@ -490,25 +499,22 @@
 
     <!-- Spinner code !-->
     <script>
-    $(window).on('load', function() {
-      preloaderFadeOutTime = 500;
-      function hidePreloader() {
+      $(window).on('load', function() {
+        preloaderFadeOutTime = 500;
+
+        function hidePreloader() {
           var preloader = $('.spinner-wrapper');
           preloader.fadeOut(preloaderFadeOutTime);
-      }
-      hidePreloader();
-    });
+        }
+        hidePreloader();
+      });
     </script>
 
     <div class="wrapper">
-      <a href = "http://dbknews.com"><img src="assets/img/dbk-widelogo.png" alt=""></a>
-      <!--       <p class="dbk">
-  &copy; 2017
-  <img src="/assets/img/dbk-widelogo.png" alt="">
-</p> -->
+      <a href="http://dbknews.com" target="_blank"><img src="assets/img/dbk-widelogo.png" alt=""></a>
 
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
-      <div id="addthis" class="addthis_inline_follow_toolbox" style = "width:20vw"></div>
+      <div id="addthis" class="addthis_inline_follow_toolbox"></div>
     </div>
   </footer>
 
